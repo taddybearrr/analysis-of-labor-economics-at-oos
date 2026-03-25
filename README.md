@@ -1,27 +1,41 @@
 # Analysis on On One Studios' Labor Economics
 
-## Overview
+## 📚 Table of Contents
 
-This repository documents a data analysis project for **On One Studios (OOS)** focused on connecting **Mindbody (MB)** operational data with **QuickBooks Online (QBO)** financial data to better understand class and program economics.
-
-The goal of this project is to help stakeholders evaluate the studio's labor economics, financial sustainability, and operational efficiency through a structured analytics workflow.
+- [Business Context](#-business-context)
+- [Problem Statement](#-problem-statement)
+- [Key Objectives](#-key-objectives)
+- [Data Sources](#-data-sources)
+- [Methodology](#-methodology)
+- [Data Cleaning and Standardization Process](#-data-cleaning-and-standardization-process)
+- [Metrics and KPI Definitions](#-metrics-and-kpi-definitions)
+- [Key Findings](#-key-findings)
+- [Limitations](#-limitations)
+- [Recommendations](#-Recommendations)
+- [Next Steps](Next Steps)
 
 ## Business Context
 
-On One Studios currently has a disconnect between:
+On One Studios is a community dance studio in the Bay Area that sells products and services in the form of classes, programs, studio rentals, and merchandise. Currently, On One Studios uses an all-in-one management software tool called, "MindBody" that handles scheduling, booking, client management, and point-of-sale transactions. For finances, OOS uses Quickbooks Online to track their expenses, send invoices, manage bank reconciliation, and generate financial reports.
+
+## Problem Statement
+
+The main issue that On One Studios struggles with is the lack of deep understanding of OOS’ payroll models to mentors, labor, and overhead costs in relation to operating a successful studio. A key objective in solving this issue is understanding the connection between On One Studio's MindBody operational data and QuickBooks Online data.
 
 * **Mindbody**, which shows operational activity such as attendance, visits, classes, memberships, and sales behavior
 * **QuickBooks Online**, which reflects financial outcomes such as payroll, overhead, and accounting structure
 
-This project aims to bridge those systems so OOS can make better decisions around:
+Right now, the studio can observe `attendance`, `visits`, `memberships`, and `sales` activity in Mindbody, while QuickBooks contains the financial reality of `wages`, `overhead`, and other related business expenses. However, without a standardized data structure and shared business definitions, it is difficult to evaluate which classes and programs are financially sustainable.
 
-* class viability
+This project will build the foundation needed to analyze labor economics at the class and program level by standardizing dimensions across MB and QBO, preparing analysis-ready data, and defining metrics that support better business decisions around:
+
+* the viability of keeping certain classes or programs
 * mentor compensation
-* schedule planning
-* program performance
+* planning out class schedules
+* launching new programs or classes
 * overall path to profitability
 
-## Stakeholders
+### Stakeholders
 
 * **Tad Racca** — Data Analyst
 * **Kevin Nguyen** — Primary stakeholder, On One Studios
@@ -31,40 +45,26 @@ This project aims to bridge those systems so OOS can make better decisions aroun
   * Kevin Breis (Co-Owner)
   * Joanne Pearl (Studio Coordinator)
 
-## Problem Statement
-
-OOS needs a clearer way to connect operational behavior to financial outcomes.
-
-Right now, the studio can observe attendance, visits, memberships, and sales activity in Mindbody, while QuickBooks contains the financial reality of payroll, overhead, and related business costs. However, without a standardized data structure and shared business definitions, it is difficult to evaluate which classes and programs are financially sustainable.
-
-This project will build the foundation needed to analyze labor economics at the class and program level by standardizing dimensions across MB and QBO, preparing analysis-ready data, and defining metrics that support better business decisions.
-
-## Project Objectives
+## Key Objectives
 
 1. Identify how mentor payroll, overhead, and other relevant labor costs are structured in QBO.
 2. Determine how those financial fields can be linked to MB operational data.
 3. Create a data dictionary that standardizes dimensions across both systems.
 4. Build a clean, analysis-ready dataset for key business analysis.
 5. Define and analyze metrics that evaluate labor economics and sustainability.
-6. Deliver a report with findings, limitations, and recommendations.
+6. Deliver a report with findings, limitations, and visualizations.
 
-## Core Business Questions
+### Core Business Questions
 
-This repository is designed to help answer questions such as:
+This repository is designed to help answer business questions such as:
 
 * What does it cost to run a class once mentor pay and overhead are considered?
 * Which classes or class types are financially sustainable?
-* How many attendees are needed for a class to break even?
 * Which mentors or class types generate the strongest contribution margin?
 * Which classes use studio time most efficiently?
 * How should OOS think about pricing, scheduling, and compensation based on the data?
 
 ## Initial Analytical Scope
-
-### Systems in scope
-
-* **Mindbody**
-* **QuickBooks Online**
 
 ### Mindbody datasets currently expected
 
